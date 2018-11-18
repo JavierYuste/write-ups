@@ -4,9 +4,8 @@
 # https://github.com/JavierYuste/---
 import argparse
 
-parser=argparse.ArgumentParser(description="It uses dnstwister or urlcrazy (currently only dnstwister) to find possible phising sites trying to clone the url specified. Then it checks their html similarity to your site's index with SimHash algorithm, created by Moses Charikar. All suggests are welcome!", epilog="Example:python BadDNS.py www.example.com -email MY_EMAIL -passwd MY_PASSWD -dest DESTINATION -p 80.0 -E /root/Desktop/exclusionsfile.txt")
+parser=argparse.ArgumentParser(description="Keygen")
 parser.add_argument("name",metavar="name",help="The name you wanna type",type=str)
-parser.add_argument("-v","--verbose",help="Verbose",action='store_true')
 
 if __name__ == '__main__':
     args=parser.parse_args()
